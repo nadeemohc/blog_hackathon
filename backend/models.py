@@ -29,6 +29,8 @@ class UserDetails(models.Model):
   phone =models.CharField(max_length=15, null=True,blank=True)
   updated=models.DateTimeField(auto_now=True)
   created=models.DateTimeField(auto_now=True)
+  added=models.CharField(max_length=100)
+  
   
   def __str__(self):
       return self.user.username
